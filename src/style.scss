@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --basic-size: 1vh;
+  --default-length: 1080;
+
+  @media (max-aspect-ratio: 3/4) {
+    --basic-size: 1vw * (9 / 16);
+    --default-length: 375;
+  }
+}
