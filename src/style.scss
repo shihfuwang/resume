@@ -11,3 +11,7 @@
     --default-length: 375;
   }
 }
+
+body {
+  padding: calc(var(--basic-size) * 10);
+}

@@ -1,28 +1,25 @@
 <script setup lang="ts">
+import Session1 from "./sessions/session1/Session1.vue";
+import Session2 from "./sessions/session2/Session2.vue";
 </script>
 
 <template>
-  <div class="title">
-    <h1 class="text-3xl font-bold underline text">
-      Hello world!
-    </h1>
-  </div>
-
-  <h1>
-    Hello world!
-  </h1>
+<div
+  class="
+    flex flex-col justify-center
+  "
+>
+  <Session1 class="session1"/>
+  <Session2 class="session2"/>
+</div>
 </template>
 
 <style scoped lang="scss">
-.title{
-  max-width:size(1020);
-  max-height: size(170);
-  border-radius: size(15);
-  border-color: aqua;
-  border-width: 2px;
+.session1{
+  margin-top: size(30);
 }
-.text{
 
-  font-size: size(12);
+.session2{
+  margin-top: size(30);
 }
 </style>
