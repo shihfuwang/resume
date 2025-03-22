@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue'
-import SkillGroup from '@/components/SkillGroup.vue'
+import SkillGroup from '@/sessions/session2/components/SkillGroup.vue'
 </script>
 
 <template>

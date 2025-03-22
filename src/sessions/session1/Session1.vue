@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue';
-import LinkIcon from '@/components/LinkIcon.vue';
+import LinkIcon from '@/sessions/session1/components/LinkIcon.vue';
 import avatar from '@/assets/image/avatar01.webp';
 import githubImg from '@/assets/image/github-logo.png';
 </script>
