@@ -8,7 +8,7 @@ const props = defineProps<{
 <template>
   <h1
     class="font-black title"
-    :style="{ '--title-size': `${props.size || 50}` }"
+    :style="{ '--title-size': `${props.size || 44}` }"
   >
     {{ props.title }}
   </h1>
