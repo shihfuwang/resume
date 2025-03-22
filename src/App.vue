@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Autobiography from "./sessions/autobiography/Autobiography.vue";
 import Skills from "./sessions/skills/Skills.vue";
+import WorkExperience from "./sessions/workExperience/WorkExperience.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Skills from "./sessions/skills/Skills.vue";
         bg-white rounded-xl shadow-lg resume">
       <Autobiography class="autobiography"/>
       <Skills class="skills"/>
+      <WorkExperience class="workExperience" />
     </div>
   </div>
 </template>
@@ -34,5 +36,9 @@ import Skills from "./sessions/skills/Skills.vue";
 
 .skills{
   margin-top: size(50);
+}
+
+.workExperience{
+  margin-top: size(100);
 }
 </style>
