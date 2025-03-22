@@ -6,7 +6,7 @@ import SkillGroup from '@/sessions/skills/components/SkillGroup.vue'
 <template>
   <div>
     <div class="text-left">
-      <Title title="Skill" :size="60" />
+      <Title title="Skill" />
     </div>
 
     <div
