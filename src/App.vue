@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Session1 from "./sessions/session1/Session1.vue";
-import Session2 from "./sessions/session2/Session2.vue";
+import Autobiography from "./sessions/autobiography/Autobiography.vue";
+import Skills from "./sessions/skills/Skills.vue";
 </script>
 
 <template>
@@ -13,8 +13,8 @@ import Session2 from "./sessions/session2/Session2.vue";
     <div
       class="
         bg-white rounded-xl shadow-lg resume">
-      <Session1 class="session1"/>
-      <Session2 class="session2"/>
+      <Autobiography class="autobiography"/>
+      <Skills class="skills"/>
     </div>
   </div>
 </template>
@@ -28,11 +28,11 @@ import Session2 from "./sessions/session2/Session2.vue";
 }
 
 
-.session1{
+.autobiography{
   margin-top: size(30);
 }
 
-.session2{
+.skills{
   margin-top: size(50);
 }
 </style>
