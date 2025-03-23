@@ -2,6 +2,7 @@
 import Autobiography from "./sessions/autobiography/Autobiography.vue";
 import Skills from "./sessions/skills/Skills.vue";
 import WorkExperience from "./sessions/workExperience/WorkExperience.vue";
+import SideProject from "./sessions/sideProject/SideProject.vue";
 </script>
 
 <template>
@@ -17,13 +18,14 @@ import WorkExperience from "./sessions/workExperience/WorkExperience.vue";
       <Autobiography class="autobiography"/>
       <Skills class="skills"/>
       <WorkExperience class="workExperience" />
+      <SideProject />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .resume {
-  max-width: size(1170);
+  max-width: size(1100);
   padding: size(40);
   margin-inline: size(30);
   margin-block: size(120);
