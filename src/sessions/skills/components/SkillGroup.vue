@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import Title from '@/components/Title.vue'
+import SkillList from './SkillList.vue'
+
 const props = defineProps<{
   title: string
   items: string[]
@@ -7,23 +10,18 @@ const props = defineProps<{
 
 <template>
   <div>
-    <h3
-      class="
-        font-extrabold border-b border-gray-600
-        skillTitle
-      "
-    >
-      {{ props.title }}
-    </h3>
-    <ul class="space-y-1">
-      <li v-for="(item, index) in props.items" :key="index">{{ item }}</li>
-    </ul>
+    <Title
+      :title="props.title"
+      :size="28"
+      class="border-b border-gray-600 skillTitle"
+    />
+    <SkillList :items="props.items" />
   </div>
 </template>
 
 <style scoped lang="scss">
 .skillTitle{
-  margin-bottom: size(10);
-  padding-bottom: size(10);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 </style>

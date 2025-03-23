@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue';
-import LinkGroup from '@/sessions/sideProject/components/LinkGroup.vue';
+import SideProjectItem from '@/sessions/sideProject/components/SideProjectItem.vue';
 import otherImg from '@/assets/image/other.png';
 import apiImg from '@/assets/image/api.png';
 import jsImg from '@/assets/image/js.png';
@@ -12,7 +12,7 @@ import javascriptImg from '@/assets/image/javascript.png';
     <Title title="Side Project" />
     <h3 class="font-extrabold border-b border-gray-600 sideProjectTitle"></h3>
 
-    <LinkGroup
+    <SideProjectItem
       title="其他"
       :links="[
         { name: 'CMS 後台管理系統(Vue)', url: 'https://example.com/cms' },
@@ -26,7 +26,7 @@ import javascriptImg from '@/assets/image/javascript.png';
       :textFirst="true"
     />
 
-    <LinkGroup
+    <SideProjectItem
       title="API 串接"
       :links="[
         { name: '台中市旅遊景點查詢', url: 'https://example.com/tour' },
@@ -36,7 +36,7 @@ import javascriptImg from '@/assets/image/javascript.png';
       :imgSrc="apiImg"
       :textFirst="false"
     />
-    <LinkGroup
+    <SideProjectItem
       title="新手 JS 地下城"
       :links="[
         { name: '九九乘法', url: 'https://example.com/tour' },
@@ -48,7 +48,7 @@ import javascriptImg from '@/assets/image/javascript.png';
       :imgSrc="jsImg"
       :textFirst="true"
     />
-    <LinkGroup
+    <SideProjectItem
       title="JavaScript30"
       :links="[
         { name: 'Drum Kit', url: 'https://example.com/tour' },

@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import Title from '@/components/Title.vue';
 import LinkIcon from '@/sessions/autobiography/components/LinkIcon.vue';
+import Avatar from '@/sessions/autobiography/components/Avatar.vue'
 import avatar from '@/assets/image/avatar01.webp';
 import githubImg from '@/assets/image/github-logo.png';
 </script>
 
 <template>
   <div class="flex flex-col items-center">
-    <img
-      class="rounded-full border border-black avatar"
-     :src="avatar"
-     >
+    <Avatar :src="avatar" />
     <Title
       class="title"
       title="潘鎮東 DonDon"
@@ -27,11 +25,6 @@ import githubImg from '@/assets/image/github-logo.png';
 </template>
 
 <style scoped lang="scss">
-.avatar {
-  width: size(220);
-  height: size(220);
-}
-
 .title{
   margin-top: size(25);
 }

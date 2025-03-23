@@ -14,14 +14,14 @@ const props = defineProps<{
       <img
         :src="props.imgSrc"
         alt="link icon"
-        class="img-icon"
+        class="imgIcon"
       >
     </a>
   </div>
 </template>
 
 <style scoped lang="scss">
-.img-icon {
+.imgIcon {
   width: size(50);
   height: size(50);
 }
