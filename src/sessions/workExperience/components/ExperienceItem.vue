@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <div class="experience-item">
-    <div class="companyDetail">
+    <div class="font-semibold companyDetail">
       {{ props.company }}, {{ props.role }}
     </div>
     <ul class="list-disc workDetails">
@@ -30,7 +30,7 @@ const props = defineProps<{
 }
 
 .workDetails{
-  font-size: size(22);
+  font-size: size(20);
   padding-left: size(26);
   margin-top: size(5);
 }

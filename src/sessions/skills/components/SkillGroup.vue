@@ -12,7 +12,7 @@ const props = defineProps<{
   <div>
     <Title
       :title="props.title"
-      :size="28"
+      :size="24"
       class="border-b border-gray-600 skillTitle"
     />
     <SkillList :items="props.items" />

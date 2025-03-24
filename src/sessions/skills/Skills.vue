@@ -18,33 +18,35 @@ import SkillGroup from '@/sessions/skills/components/SkillGroup.vue'
       <SkillGroup
         title="網頁切版"
         :items="[
-          'HTML / HTML5',
-          'Pug',
-          'CSS / CSS3 / SCSS',
+          'HTML5',
+          'CSS',
+          'Tailwind',
           'Bootstrap',
-          'RWD響應式網站',
-          'Photoshop',
-          'Illustrator'
+          'RWD',
+          'Figma 對稿'
         ]"
       />
       <SkillGroup
-        title="程式語言"
+        title="前端技術"
         :items="[
           'JavaScript',
-          'jQuery',
-          'Vue.js'
+          'TypeScript',
+          'Vue 3',
+          'Vue Router',
+          'Pinia',
+          'Axios',
+          'Element Plus',
+          'Electron'
         ]"
       />
       <SkillGroup
-        title="其他"
+        title="後端與其他"
         :items="[
-          'Git',
-          'Bitbucket',
-          'Trello',
-          'Jira',
-          'Visual Studio Code',
-          'WebStorm',
-          'CI/CD'
+          'Node.js',
+          'MySQL',
+          'Git / GitHub / GitLab',
+          'Render / Vercel 部署',
+          'CodiMD',
         ]"
       />
     </div>

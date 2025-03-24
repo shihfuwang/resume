@@ -6,12 +6,12 @@ const props = defineProps<{
 </script>
 
 <template>
-  <h1
-    class="font-black title"
-    :style="{ '--title-size': `${props.size || 44}` }"
-  >
-    {{ props.title }}
-  </h1>
+<h1
+  class="font-black"
+  :style="{ fontSize: `${props.size || 44}px` }"
+>
+  {{ props.title }}
+</h1>
 </template>
 
 <style scoped lang="scss">
