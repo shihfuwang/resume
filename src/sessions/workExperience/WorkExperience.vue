@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import Title from '@/components/Title.vue';
-import ExperienceItem from '@/sessions/workExperience/components/ExperienceItem.vue';
+import Title from '@/components/Title.vue'
+import ExperienceItem from '@/sessions/workExperience/components/ExperienceItem.vue'
+
+import icon1 from '@/assets/icon/1.jpg'
+import icon2 from '@/assets/icon/2.jpg'
+import icon3 from '@/assets/icon/3.jpg'
 
 const experiences = [
   {
@@ -13,6 +17,7 @@ const experiences = [
       '負責 API 串接與資料整合，完成畫面與功能串接'
     ],
     timestamp: 'Apr 2023 ~ Aug 2024',
+    icon: icon1
   },
   {
     company: '坂和企業有限公司',
@@ -22,6 +27,7 @@ const experiences = [
       '提供內部 IT 技術支援與系統環境維護'
     ],
     timestamp: 'Apr 2022 ~ Mar 2023',
+    icon: icon2
   },
   {
     company: '全科資訊有限公司',
@@ -32,16 +38,14 @@ const experiences = [
       '操作後台工具進行網路流量監控與問題追蹤'
     ],
     timestamp: 'Oct 2021 ~ Mar 2022',
+    icon: icon3
   }
-];
+]
 </script>
 
 <template>
   <div>
-    <Title
-      title="Work Experience"
-      class="title"
-    />
+    <Title title="Work Experience" class="title" />
     <el-timeline>
       <el-timeline-item
         v-for="(exp, index) in experiences"
@@ -49,6 +53,9 @@ const experiences = [
         :timestamp="exp.timestamp"
         placement="top"
       >
+        <template #dot>
+          <img :src="exp.icon" class="customIcon" />
+        </template>
         <ExperienceItem
           :company="exp.company"
           :role="exp.role"
@@ -60,7 +67,27 @@ const experiences = [
 </template>
 
 <style scoped lang="scss">
-.title{
+.title {
   margin-bottom: size(30);
+}
+
+:deep(.customIcon) {
+  width: size(32);
+  height: size(32);
+  margin-top: size(-7);
+}
+
+:deep(.el-timeline-item__timestamp) {
+  margin-left: size(3);
+}
+
+@media (max-width: 640px) {
+  :deep(.customIcon) {
+    margin-top: size(-4);
+  }
+
+  :deep(.el-timeline-item__timestamp) {
+    margin-left: size(-5);
+  }
 }
 </style>

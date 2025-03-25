@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="experience-item">
+  <div class="experienceItem">
     <div class="font-semibold companyDetail">
       {{ props.company }}, {{ props.role }}
     </div>
@@ -20,7 +20,7 @@ const props = defineProps<{
 </template>
 
 <style scoped lang="scss">
-.experience-item {
+.experienceItem {
   margin-bottom: size(10);
 }
 
