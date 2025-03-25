@@ -1,44 +1,53 @@
 <script setup lang="ts">
-import Title from '@/components/Title.vue'
-
 const props = defineProps<{
-  title: string,
-  links: { name: string; url: string }[]
+  time: string
+  link: string
+  description: string
+  techs: string
 }>()
 
-function handleClick(link: { name: string; url: string }, event: MouseEvent) {
-  const isLocalTrigger = link.url.includes('localhost')
+function handleClick(event: MouseEvent) {
+  const isLocalTrigger = props.link.includes('localhost')
 
   event.preventDefault()
 
   if (isLocalTrigger) {
-    fetch(link.url)
+    fetch(props.link)
       .then(res => res.text())
       .then(msg => {
         alert(msg)
       })
       .catch(err => {
-        // alert('❌ 無法啟動本地程式，請確認 server 是否已開啟')
         console.error(err)
       })
   } else {
-    window.open(link.url, '_blank')
+    window.open(props.link, '_blank')
   }
 }
 </script>
 
 <template>
-  <div>
-    <Title :title="props.title" :size="40" />
-    <ul class="text-green-600 space-y-1 text-[16px] md:text-[20px]">
-      <li
-        v-for="(link, index) in props.links"
-        :key="index"
-        class="cursor-pointer hover:underline"
-        @click="(e) => handleClick(link, e)"
+  <div class="space-y-2">
+    <p>
+      時間：{{ time }}
+      <span
+        class="text-green-600 ml-2 cursor-pointer hover:underline"
+        @click="(e) => handleClick(e)"
       >
-        {{ link.name }}
-      </li>
-    </ul>
+        Demo
+      </span>
+    </p>
+
+    <p>介紹 : {{ description }}</p>
+
+    <p>
+      使用技術：{{ techs }}
+    </p>
   </div>
 </template>
+
+<style scoped lang="scss">
+p{
+  font-size: size(22);
+}
+</style>

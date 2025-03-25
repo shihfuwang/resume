@@ -5,6 +5,12 @@ import otherImg from '@/assets/image/other.png';
 import apiImg from '@/assets/image/api.png';
 import jsImg from '@/assets/image/js.png';
 import javascriptImg from '@/assets/image/javascript.png';
+
+import canvasImg from '@/assets/image/canvas.png';
+import RWDImg from '@/assets/image/RWD.png';
+import cardGameImg from '@/assets/image/card.png';
+import lottoryImg from '@/assets/image/lottory.png';
+import lineImg from '@/assets/image/line.jpg';
 </script>
 
 <template>
@@ -13,48 +19,53 @@ import javascriptImg from '@/assets/image/javascript.png';
     <h3 class="font-extrabold border-b border-gray-600 sideProjectTitle"></h3>
 
     <SideProjectItem
-      title="其他"
-      :links="[
-        { name: 'Canvas練習', url: 'https://canvas-game-ycp4.onrender.com/' },
-        { name: '樂透彩球機', url: 'http://localhost:5050/start-lottery' },
-        { name: 'RWD練習', url: 'https://testrwd.onrender.com/' },
-        { name: 'LINE點餐機器人', url: 'https://line.me/R/ti/p/@651jvzjg' },
-      ]"
-      :imgSrc="otherImg"
+      title="抽獎機"
+      time="2024"
+      link="http://localhost:5050/start-lottery"
+      description="使用 Vue + Node.js 串接本地端指令，啟動樂透彩球機互動介面。"
+      techs="Vue3、Vite、Node.js、bat 指令"
+      :imgSrc="lottoryImg"
       :textFirst="true"
     />
 
     <SideProjectItem
-      title="API 串接"
-      :links="[
-        { name: '台中市旅遊景點查詢', url: 'https://example.com/tour' },
-        { name: '超級英雄榜', url: 'https://example.com/hero' },
-        { name: '今明36小時天氣預報', url: 'https://example.com/weather' }
-      ]"
-      :imgSrc="apiImg"
+      title="Canvas"
+      time="2024"
+      link="https://canvas-game-ycp4.onrender.com/"
+      description="使用 Vue + Node.js 串接本地端指令，啟動樂透彩球機互動介面。"
+      techs="Vue3、Vite、Node.js、bat 指令"
+      :imgSrc="canvasImg"
       :textFirst="false"
     />
+
     <SideProjectItem
-      title="新手 JS 地下城"
-      :links="[
-        { name: '九九乘法', url: 'https://example.com/tour' },
-        { name: '時鐘', url: 'https://example.com/hero' },
-        { name: '計算機', url: 'https://example.com/weather' },
-        { name: '時區', url: 'https://example.com/weather' },
-        { name: '空氣品質指標 (AQI)  ', url: 'https://example.com/weather' }
-      ]"
-      :imgSrc="jsImg"
+      title="翻牌遊戲"
+      time="2024"
+      link="https://card-game-vwhp.onrender.com"
+      description="使用 Vue + Node.js 串接本地端指令，啟動樂透彩球機互動介面。"
+      techs="Vue3、Vite、Node.js、bat 指令"
+      :imgSrc="cardGameImg"
       :textFirst="true"
     />
+
     <SideProjectItem
-      title="JavaScript30"
-      :links="[
-        { name: 'Drum Kit', url: 'https://example.com/tour' },
-        { name: 'JS + CSS Clock', url: 'https://example.com/hero' },
-        { name: 'Update CSS Variables with JS(Vue)', url: 'https://example.com/weather' }
-      ]"
-      :imgSrc="javascriptImg"
+      title="RWD練習"
+      time="2024"
+      link="https://testrwd.onrender.com/"
+      description="使用 Vue + Node.js 串接本地端指令，啟動樂透彩球機互動介面。"
+      techs="vue +ts + tailwind(RWD) + 模組化"
+      :imgSrc="RWDImg"
       :textFirst="false"
+    />
+
+    <SideProjectItem
+      title="LINE點餐機器人"
+      time="2024"
+      link="https://line.me/R/ti/p/@651jvzjg"
+      description="使用 Vue + Node.js 串接本地端指令，啟動樂透彩球機互動介面。"
+      techs="vue +ts + tailwind(RWD) + 模組化"
+      :imgSrc="lineImg"
+      :textFirst="true"
     />
   </div>
 </template>

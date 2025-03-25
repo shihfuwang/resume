@@ -11,6 +11,6 @@ const props = defineProps<{
       md:w-2/3 md:my-0
     "
   >
-    <img :src="props.imgSrc"/>
+    <img :src="props.imgSrc" class="border border-black"/>
   </div>
 </template>

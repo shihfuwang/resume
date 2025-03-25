@@ -5,8 +5,20 @@ import ExperienceItem from '@/sessions/workExperience/components/ExperienceItem.
 import icon1 from '@/assets/icon/1.jpg'
 import icon2 from '@/assets/icon/2.jpg'
 import icon3 from '@/assets/icon/3.jpg'
+import icon4 from '@/assets/icon/4.png'
 
 const experiences = [
+  {
+    company: '清景麟集團',
+    role: 'MIS工程師',
+    details: [
+      '資訊設備與系統的管理與維護',
+      '軟硬體的安裝、維修及設定',
+      '外包廠商API對接',
+    ],
+    timestamp: 'Apr 2023 ~ Aug 2024',
+    icon: icon1
+  },
   {
     company: '坂和企業有限公司',
     role: '前端工程師',
@@ -17,7 +29,7 @@ const experiences = [
       '負責 API 串接與資料整合，完成畫面與功能串接'
     ],
     timestamp: 'Apr 2023 ~ Aug 2024',
-    icon: icon1
+    icon: icon2
   },
   {
     company: '坂和企業有限公司',
@@ -27,7 +39,7 @@ const experiences = [
       '提供內部 IT 技術支援與系統環境維護'
     ],
     timestamp: 'Apr 2022 ~ Mar 2023',
-    icon: icon2
+    icon: icon3
   },
   {
     company: '全科資訊有限公司',
@@ -38,7 +50,7 @@ const experiences = [
       '操作後台工具進行網路流量監控與問題追蹤'
     ],
     timestamp: 'Oct 2021 ~ Mar 2022',
-    icon: icon3
+    icon: icon4
   }
 ]
 </script>
