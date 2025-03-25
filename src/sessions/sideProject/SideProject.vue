@@ -15,10 +15,10 @@ import javascriptImg from '@/assets/image/javascript.png';
     <SideProjectItem
       title="其他"
       :links="[
-        { name: 'CMS 後台管理系統(Vue)', url: 'https://example.com/cms' },
-        { name: 'Lynked 前後台(Vue)', url: 'https://example.com/lynked' },
-        { name: '晚餐吃什麼？翻牌抽籤小遊戲', url: 'https://example.com/dinner' },
+        { name: 'Canvas練習', url: 'https://canvas-game-ycp4.onrender.com/' },
         { name: '樂透彩球機', url: 'http://localhost:5050/start-lottery' },
+        { name: 'RWD練習', url: 'https://testrwd.onrender.com/' },
+        { name: 'LINE點餐機器人', url: 'https://line.me/R/ti/p/@651jvzjg' },
       ]"
       :imgSrc="otherImg"
       :textFirst="true"
