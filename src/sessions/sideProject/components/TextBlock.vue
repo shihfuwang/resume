@@ -18,7 +18,7 @@ function handleClick(link: { name: string; url: string }, event: MouseEvent) {
         alert(msg)
       })
       .catch(err => {
-        alert('❌ 無法啟動本地程式，請確認 server 是否已開啟')
+        // alert('❌ 無法啟動本地程式，請確認 server 是否已開啟')
         console.error(err)
       })
   } else {
