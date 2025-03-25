@@ -18,9 +18,7 @@ import javascriptImg from '@/assets/image/javascript.png';
         { name: 'CMS 後台管理系統(Vue)', url: 'https://example.com/cms' },
         { name: 'Lynked 前後台(Vue)', url: 'https://example.com/lynked' },
         { name: '晚餐吃什麼？翻牌抽籤小遊戲', url: 'https://example.com/dinner' },
-        { name: '樂透彩球機', url: 'https://example.com/lotto' },
-        { name: '貨幣換算器(Vue)', url: 'https://example.com/currency' },
-        { name: 'To do list(Vue)', url: 'https://example.com/todo' }
+        { name: '樂透彩球機', url: 'http://localhost:5050/start-lottery' },
       ]"
       :imgSrc="otherImg"
       :textFirst="true"
