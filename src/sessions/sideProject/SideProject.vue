@@ -11,12 +11,23 @@ import RWDImg from '@/assets/image/RWD.png';
 import cardGameImg from '@/assets/image/card.png';
 import lottoryImg from '@/assets/image/lottory.png';
 import lineImg from '@/assets/image/line.jpg';
+import naxiaImg from '@/assets/image/naxia.png';
 </script>
 
 <template>
   <div>
     <Title title="Side Project" />
     <h3 class="font-extrabold border-b border-gray-600 sideProjectTitle"></h3>
+
+      <SideProjectItem
+        title="專案片段"
+        time="2024"
+        link="http://localhost:5050/start-naxia"
+        description="展示 遊戲的怪物卡牌資料，提供技能、類型、屬性等資訊呈現。"
+        techs="Vue3、Pinia、Tailwind、bat 指令、自啟前端"
+        :imgSrc="naxiaImg"
+        :textFirst="false"
+      />
 
     <SideProjectItem
       title="抽獎機"
