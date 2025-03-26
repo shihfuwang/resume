@@ -5,12 +5,12 @@ import Title from '@/components/Title.vue'
 
 const props = defineProps<{
   title: string
-  time: string
-  link: string
+  demoLink: string
   description: string
-  techs: string
   imgSrc: string
   textFirst: boolean
+  showGithub: boolean
+  githubLink?: string
 }>()
 </script>
 
@@ -30,13 +30,13 @@ const props = defineProps<{
       "
     >
       <Title :title="props.title" :size="28"/>
-        <TextBlock
-          :time="props.time"
-          :link="props.link"
-          :description="props.description"
-          :techs="props.techs"
-          class="text"
-        />
+      <TextBlock
+        :demoLink="props.demoLink"
+        :description="props.description"
+        :showGithub="props.showGithub"
+        :githubLink="props.githubLink"
+        class="text"
+      />
       </div>
 
       <ImageBlock :imgSrc="props.imgSrc" />
