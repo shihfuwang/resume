@@ -23,7 +23,6 @@ import SkillGroup from '@/sessions/skills/components/SkillGroup.vue'
           'Tailwind',
           'Bootstrap',
           'RWD',
-          'Figma 對稿'
         ]"
       />
       <SkillGroup
@@ -45,7 +44,7 @@ import SkillGroup from '@/sessions/skills/components/SkillGroup.vue'
           'Node.js',
           'MySQL',
           'Git / GitHub / GitLab',
-          'Render / Vercel 部署',
+          'Render',
           'CodiMD',
         ]"
       />
